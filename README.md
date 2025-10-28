@@ -38,9 +38,8 @@ mediGuard/
 ├── popup.html # Main interface
 ├── popup.js # Logic + prompt handler
 ├── background.js # Service worker (hybrid logic)
-├── options.html # Settings page for API key
-├── otc_rules.json # Verified OTC rulebook
-└── assets/ # Icons and visuals
+├── options.html # Settings page for API key    
+└── otc_rules.json # Verified OTC rulebook
 
 ---
 
@@ -74,6 +73,7 @@ For hybrid fallback:
 - Open options.html → enter your key
 - Get one at https://aistudio.google.com/app/apikey
 
+---
 
 🚀 Usage
 1. Click the 🧠 MediGuard AI icon on Chrome’s toolbar.
@@ -83,6 +83,7 @@ For hybrid fallback:
 
 If local inference is unavailable, the extension gracefully falls back to Gemini 1.5 Flash via the Google Generative Language API.
 
+---
 
 🧬 How It Works
 1. Input Capture → User enters or uploads medicine details.
@@ -91,6 +92,7 @@ If local inference is unavailable, the extension gracefully falls back to Gemini
 4. Summarization & Translation → Chrome summarizer + translator APIs create natural text.
 5. Hybrid Mode → Gemini 1.5 Flash API ensures high accuracy when local models are unavailable.
 
+---
 
 🛡️ Privacy & Ethics
 - 100 % client-side inference by default.
@@ -98,6 +100,7 @@ If local inference is unavailable, the extension gracefully falls back to Gemini
 - Compliant with Chrome’s aiLanguageModel security sandbox.
 - Built to exemplify ethical AI in healthcare — transparency, safety, and autonomy.
 
+---
 
 📊 Impact
 | **Metric**                     | **Outcome**                                             |
@@ -107,26 +110,23 @@ If local inference is unavailable, the extension gracefully falls back to Gemini
 | Potential annual cost savings   | ≈ $150 M USD (U.S. estimate)                             |
 | Accessibility reach             | Multilingual + offline-first for underserved regions      |
 
+---
 
 🔬 Data & Sources
-OpenFDA Drug Label API
-World Health Organization OTC Safety Report (2023)
-Google Chrome Built-in AI Developer Docs
+- OpenFDA Drug Label API
+- World Health Organization OTC Safety Report (2023)
+- Google Chrome Built-in AI Developer Docs
 
+---
 
 👨‍💻 Author
 Azkhan Abdul Salam
 ComputerScience Undergraduate · HealthTech Innovator
 
+---
 
 💬 Acknowledgments
 Special thanks to the Google Chrome AI team for pioneering on-device intelligence,
 and to the OpenFDA initiative for open, verifiable medical data access.
 
 “When we bridge understanding, we prevent harm — that’s exactly what MediGuard AI stands for.”
-
-
-
-
-
-
