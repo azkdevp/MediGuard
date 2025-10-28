@@ -3,7 +3,6 @@
  
 > ⚡ Private • Offline-Capable • Hybrid Gemini Integration  
 
----
 
 ## 🌍 Overview
 MediGuard AI is a next-generation Chrome extension that analyzes **over-the-counter (OTC)** medicine safety using **on-device AI**.  
@@ -12,7 +11,6 @@ It interprets dosage labels, detects potential risks, and explains side effects 
 No cloud calls. No tracking.  
 Just safe, accessible healthcare for everyone.  
 
----
 
 ## ✨ Key Features
 - **🧩 On-device Gemini Nano reasoning** — runs locally via Chrome’s `aiLanguageModel` API  
@@ -22,7 +20,6 @@ Just safe, accessible healthcare for everyone.
 - **🈯 Instant multilingual translation** — supports the Chrome on-device translator API  
 - **⚡ Lightweight** — < 2 MB total, no dependencies or backend  
 
----
 
 ## 🧱 Tech Stack
 | Layer | Technology |
@@ -33,7 +30,6 @@ Just safe, accessible healthcare for everyone.
 | APIs | `aiLanguageModel` · `chrome.summarizer` · `chrome.translator` |
 | Data Sources | OpenFDA API · Custom `otc_rules.json` ruleset |
 
----
 
 ## 🧩 Project Structure
 mediGuard/
@@ -54,11 +50,14 @@ mediGuard/
 ```bash
 git clone https://github.com/your-username/MediGuard-AI.git
 cd MediGuard-AI
+```
 
 ### 2️⃣ Enable Chrome’s AI APIs
 Run Chrome with the following flags (Windows example):
+```bash
 cd "C:\Program Files\Google\Chrome\Application"
 .\chrome.exe --enable-features=OptimizationGuideOnDeviceModel,PromptAPIForGeminiNano,OnDeviceTranslation,TextSummarizer,OnDeviceTranslationLanguagePack,OnDeviceTranslationForceEnable --no-sandbox --disable-gpu-sandbox
+```
 
 💡 Tip: Use Chrome ≥ v138.0.0.0 (Beta or Canary) to access Gemini Nano APIs.
 
@@ -75,7 +74,6 @@ For hybrid fallback:
 - Open options.html → enter your key
 - Get one at https://aistudio.google.com/app/apikey
 
----
 
 🚀 Usage
 1. Click the 🧠 MediGuard AI icon on Chrome’s toolbar.
@@ -100,29 +98,26 @@ If local inference is unavailable, the extension gracefully falls back to Gemini
 - Compliant with Chrome’s aiLanguageModel security sandbox.
 - Built to exemplify ethical AI in healthcare — transparency, safety, and autonomy.
 
----
 
 📊 Impact
-Metric	Outcome
-OTC misuse reduction	↓ ~78 % (modeled via public health datasets)
-Health literacy improvement	+64 % comprehension increase
-Potential annual cost savings	≈ $150 M USD (U.S. estimate)
-Accessibility reach	Multilingual + offline-first for underserved regions
+| **Metric**                     | **Outcome**                                             |
+|--------------------------------|----------------------------------------------------------|
+| OTC misuse reduction            | ↓ ~78 % (modeled via public health datasets)             |
+| Health literacy improvement     | +64 % comprehension increase                             |
+| Potential annual cost savings   | ≈ $150 M USD (U.S. estimate)                             |
+| Accessibility reach             | Multilingual + offline-first for underserved regions      |
 
----
 
 🔬 Data & Sources
 OpenFDA Drug Label API
 World Health Organization OTC Safety Report (2023)
 Google Chrome Built-in AI Developer Docs
 
----
 
 👨‍💻 Author
 Azkhan Abdul Salam
 ComputerScience Undergraduate · HealthTech Innovator
 
----
 
 💬 Acknowledgments
 Special thanks to the Google Chrome AI team for pioneering on-device intelligence,
