@@ -1,0 +1,18 @@
+{
+  "ibuprofen": {
+    "avoid_with": ["asthma", "ulcer", "heart disease"],
+    "dosage": "200-400 mg every 4-6 hours as needed (max 1200 mg/day)"
+  },
+  "loratadine": {
+    "avoid_with": [],
+    "dosage": "10 mg once daily"
+  },
+  "acetaminophen": {
+    "avoid_with": ["liver disease"],
+    "dosage": "500-1000 mg every 6 hours as needed (max 4000 mg/day)"
+  },
+  "aspirin": {
+    "avoid_with": ["asthma", "ulcer", "bleeding disorder"],
+    "dosage": "325-650 mg every 4-6 hours as needed (max 4000 mg/day)"
+  }
+}

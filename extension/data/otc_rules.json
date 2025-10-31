@@ -1,0 +1,137 @@
+{
+  "ibuprofen": {
+    "avoid_with": ["asthma (NSAID-sensitive)", "active ulcer/gi bleed", "severe kidney disease", "heart failure", "late pregnancy (3rd trimester)"],
+    "avoid_with_meds": ["other NSAIDs", "warfarin", "apixaban", "clopidogrel"],
+    "dosage": {
+      "adult": "200–400 mg every 4–6 h PRN",
+      "max_daily": "1200 mg OTC (self-care)",
+      "pediatric": "5–10 mg/kg every 6–8 h (max 40 mg/kg/day)"
+    },
+    "notes": ["take with food", "stop if stomach pain/bleeding"]
+  },
+  "acetaminophen (paracetamol)": {
+    "avoid_with": ["severe liver disease", "chronic heavy alcohol use"],
+    "avoid_with_meds": ["other acetaminophen-containing products"],
+    "dosage": {
+      "adult": "325–1000 mg every 4–6 h PRN",
+      "max_daily": "3000 mg (OTC label) – some labels allow up to 4000 mg if supervised",
+      "pediatric": "10–15 mg/kg every 4–6 h (max 75 mg/kg/day)"
+    },
+    "notes": ["track total APAP from all products"]
+  },
+  "aspirin": {
+    "avoid_with": ["children/teens with viral illness", "active ulcer/gi bleed", "bleeding disorders", "late pregnancy"],
+    "avoid_with_meds": ["warfarin", "apixaban", "ibuprofen (concurrent)"],
+    "dosage": {
+      "adult": "325–650 mg every 4–6 h PRN",
+      "max_daily": "4000 mg"
+    },
+    "notes": ["avoid in <19 yrs (Reye’s risk)", "separate from ibuprofen by 2+ hours if both are required"]
+  },
+  "naproxen": {
+    "avoid_with": ["active ulcer/gi bleed", "severe kidney disease", "heart failure", "late pregnancy"],
+    "avoid_with_meds": ["other NSAIDs", "warfarin", "apixaban"],
+    "dosage": {
+      "adult": "220 mg every 8–12 h (first dose may be 440 mg)",
+      "max_daily": "660 mg"
+    },
+    "notes": ["take with food"]
+  },
+  "loratadine": {
+    "avoid_with": [],
+    "avoid_with_meds": [],
+    "dosage": {
+      "adult": "10 mg once daily",
+      "pediatric": "2–5 yrs: 5 mg once daily (syrup/chewable)"
+    },
+    "notes": ["non-drowsy antihistamine"]
+  },
+  "cetirizine": {
+    "avoid_with": ["severe kidney disease (dose adjust)"],
+    "avoid_with_meds": [],
+    "dosage": {
+      "adult": "10 mg once daily",
+      "pediatric": "6–11 yrs: 5–10 mg once daily"
+    },
+    "notes": ["may cause drowsiness in some users"]
+  },
+  "diphenhydramine": {
+    "avoid_with": ["glaucoma (narrow-angle)", "urinary retention/BPH", "elderly (falls/confusion risk)"],
+    "avoid_with_meds": ["other sedatives", "alcohol"],
+    "dosage": {
+      "adult": "25–50 mg every 4–6 h",
+      "max_daily": "300 mg"
+    },
+    "notes": ["causes drowsiness; avoid driving"]
+  },
+  "pseudoephedrine": {
+    "avoid_with": ["uncontrolled hypertension", "severe heart disease", "hyperthyroidism", "narrow-angle glaucoma"],
+    "avoid_with_meds": ["MAO inhibitors (within 14 days)"],
+    "dosage": {
+      "adult": "60 mg every 4–6 h OR 120 mg ER every 12 h",
+      "max_daily": "240 mg"
+    },
+    "notes": ["may increase heart rate/blood pressure; ID required in many regions"]
+  },
+  "phenylephrine": {
+    "avoid_with": ["uncontrolled hypertension", "severe heart disease", "hyperthyroidism"],
+    "avoid_with_meds": ["MAO inhibitors (within 14 days)"],
+    "dosage": {
+      "adult": "10 mg every 4 h",
+      "max_daily": "60 mg"
+    },
+    "notes": ["decongestant; efficacy debated"]
+  },
+  "dextromethorphan": {
+    "avoid_with": ["use of MAO inhibitors within 14 days"],
+    "avoid_with_meds": ["SSRIs/SNRIs/TCAs (serotonin syndrome risk when abused)"],
+    "dosage": {
+      "adult": "10–20 mg every 4 h OR 30 mg every 6–8 h",
+      "max_daily": "120 mg"
+    },
+    "notes": ["do not combine with alcohol; misuse risk at high doses"]
+  },
+  "guaifenesin": {
+    "avoid_with": [],
+    "avoid_with_meds": [],
+    "dosage": {
+      "adult": "200–400 mg every 4 h OR 600–1200 mg ER every 12 h",
+      "max_daily": "2400 mg"
+    },
+    "notes": ["increase fluids to help mucus clearance"]
+  },
+  "omeprazole": {
+    "avoid_with": ["long-term unsupervised use (>14 days per course)"],
+    "avoid_with_meds": ["clopidogrel (reduced effect)"],
+    "dosage": {
+      "adult": "20 mg once daily before breakfast for 14 days"
+    },
+    "notes": ["seek care if heartburn persists >2 weeks or alarm symptoms"]
+  },
+  "loperamide": {
+    "avoid_with": ["bloody stool", "high fever", "antibiotic-associated colitis"],
+    "avoid_with_meds": ["CYP3A4/2C8 inhibitors at high doses (toxicity risk)"],
+    "dosage": {
+      "adult": "4 mg initially, then 2 mg after each loose stool",
+      "max_daily": "8 mg OTC"
+    },
+    "notes": ["stop if no improvement in 48 h"]
+  },
+  "meclizine": {
+    "avoid_with": ["glaucoma (narrow-angle)", "urinary retention/BPH"],
+    "avoid_with_meds": ["other sedatives", "alcohol"],
+    "dosage": {
+      "adult": "25–50 mg 1 hour before travel, then every 24 h"
+    },
+    "notes": ["drowsiness common"]
+  },
+  "famotidine": {
+    "avoid_with": ["severe kidney disease (dose adjust)"],
+    "avoid_with_meds": [],
+    "dosage": {
+      "adult": "10–20 mg up to twice daily",
+      "max_daily": "40 mg OTC"
+    },
+    "notes": ["acid reducer; see doctor if symptoms >14 days"]
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MediGuard AI</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container" role="dialog" aria-labelledby="title" aria-modal="true">
+    <!-- Close button -->
+    <button id="close-btn" class="close-btn" aria-label="Close popup">×</button>
+
+    <!-- Header -->
+    <header>
+      <h1 id="title">
+        MediGuard<span style="color:#1a73e8">AI</span>
+      </h1>
+      <p class="tagline">Personalized OTC safety — private & local.</p>
+      <div id="offline-note" aria-live="polite">
+        ⚙️ Running locally — Gemini Nano active. Add an API key in
+        <a href="options.html" target="_blank" rel="noopener">Settings</a> to enable cloud fallback & photo detection.
+      </div>
+    </header>
+
+    <!-- Input fields -->
+    <div class="input-group">
+      <label for="age">Age</label>
+      <input id="age" type="number" placeholder="e.g. 45" aria-label="Age" />
+    </div>
+
+    <div class="input-group">
+      <label for="gender">Gender</label>
+      <select id="gender" aria-label="Gender">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="conditions">Conditions</label>
+      <input id="conditions" type="text" placeholder="e.g. asthma, hypertension" aria-label="Medical conditions" />
+    </div>
+
+    <div class="input-group">
+      <label for="pill-photo">Pill Photo (optional)</label>
+      <div class="mini-row">
+        <input id="pill-photo" type="file" accept="image/*" aria-label="Choose pill box or label photo" />
+        <button id="detect-btn" class="mini-btn" aria-label="Detect drug name from photo">📸 Detect</button>
+      </div>
+      <small>Tip: Snap the <b>front of the box/label</b>.</small>
+    </div>
+
+    <div class="input-group">
+      <label for="drug">Drug Name</label>
+      <input id="drug" type="text" placeholder="e.g. ibuprofen" aria-label="Drug name" />
+    </div>
+
+    <!-- Hybrid Mode -->
+    <div class="toggle-row">
+      <span class="toggle-label">Hybrid Mode</span>
+      <label class="switch" aria-label="Toggle hybrid mode for FDA data">
+        <input type="checkbox" id="hybrid-toggle" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <!-- Always-visible status badge (auto-added by popup.js) -->
+    <!-- <div id="status-badge"></div> -->
+
+    <!-- Analyze button -->
+    <button id="analyze-btn" aria-label="Analyze safety">Analyze Safety</button>
+
+    <!-- Translation / Simplification -->
+    <div class="translate-section">
+      <label for="language">🌐 Language:</label>
+      <select id="language" aria-label="Language">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="zh">中文</option>
+        <option value="tl">Tagalog</option>
+        <option value="vi">Tiếng Việt</option>
+        <option value="ht">Kreyòl Ayisyen</option>
+      </select>
+    </div>
+
+    <div class="simplify-section">
+      <button id="simplify-btn" class="mini-btn">🧠 Simplify</button>
+      <button id="translate-btn" class="mini-btn">🌍 Translate</button>
+    </div>
+
+    <!-- Results -->
+    <div id="result" class="result-box hidden" aria-live="polite">
+      <h3 id="risk"></h3>
+
+      <div id="confidence-wrap">
+        <div id="confidence-label">
+          <span>Risk Index</span>
+          <span id="risk-index-value" aria-live="polite">--%</span>
+        </div>
+        <div
+          id="confidence-bar-container"
+          role="progressbar"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+          aria-label="Risk index"
+        >
+          <div id="confidence-bar"></div>
+        </div>
+        <div id="risk-index">Higher % = safer for your profile.</div>
+      </div>
+
+      <p id="summary"></p>
+      <p id="fda-snippet"></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p><a href="options.html" target="_blank" rel="noopener">⚙️ Settings (add Gemini key)</a></p>
+      <p>🧠 Powered by Chrome Built-in AI + openFDA + Gemini</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="libs/jspdf.umd.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
